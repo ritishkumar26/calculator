@@ -30,19 +30,18 @@ border-radius: 6px;
 margin-top: 0;
 box-shadow: 0 0 0 1px rgb(222, 220, 220);
 }
-.display-container{
-position: relative;
-}
-
 input[class="display"]
 {
-width: 74%;
+width: 100%;
 height: 50px;
-position: absolute;
+
 right: 0;
 top: 18px;
 border: 2px solid #753682;
 box-shadow:  5px 5px 5px 2px#9d58ab;
+}
+.keys-container button:first-child{
+    width: 100%;
 }
 input[class="display"], text{
 font-size: 30px;
@@ -66,9 +65,21 @@ box-shadow:  5px 5px 5px#753682  ;
 box-shadow:  5px 5px 2px#753682  ;   
 background-color: rgb(227, 204, 204);
 }
-.upper-display{
-float: right;
-font-size: 15px;
-
-
+.inner-screen{
+    position: relative;
+    width: 100%;
 }
+.upper-display {
+position: absolute;
+right: 0;
+margin-top: 8px;
+font-size: 15px;
+background-color: white;
+width: 74%;
+padding: 12px px;
+height: 40px;
+text-align: right;
+font-size: 25px;
+box-shadow:  5px 5px 5px 2px#9d58ab;
+}
+
